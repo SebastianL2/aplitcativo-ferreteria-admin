@@ -1,48 +1,47 @@
 [
     {
-        "titulo":"Polos",
-        "slug":"polos",
+        "titulo": "Herramientas de mano",
+        "slug": "herramientas-de-mano",
         "_id": "1000"
     },
     {
-        "titulo":"Poleras",
-        "slug":"poleras",
+        "titulo": "Herramientas eléctricas",
+        "slug": "herramientas-electricas",
         "_id": "1001"
     },
     {
-        "titulo":"Joggers",
-        "slug":"joggers",
-        "_id": "1004"
-    },
-    {
-        "titulo":"Shorts",
-        "slug":"shorts",
-        "_id": "1005"
-    },
-    {
-        "titulo":"Camisas",
-        "slug":"camisas",
+        "titulo": "Ferretería para construcción",
+        "slug": "ferreteria-para-construccion",
         "_id": "1002"
     },
     {
-        "titulo":"Casacas",
-        "slug":"casacas",
-        "_id": "1006"
-    },
-    {
-        "titulo":"Tops",
-        "slug":"tops",
-        "_id": "1007"
-    },
-    {
-        "titulo":"Accesorios",
-        "slug":"camisas",
+        "titulo": "Fontanería",
+        "slug": "fontaneria",
         "_id": "1003"
     },
     {
-        "titulo":"Packs",
-        "slug":"packs",
+        "titulo": "Electricidad",
+        "slug": "electricidad",
+        "_id": "1004"
+    },
+    {
+        "titulo": "Pintura y accesorios",
+        "slug": "pintura-y-accesorios",
+        "_id": "1005"
+    },
+    {
+        "titulo": "Cerrajería",
+        "slug": "cerrajeria",
+        "_id": "1006"
+    },
+    {
+        "titulo": "Jardinería",
+        "slug": "jardineria",
+        "_id": "1007"
+    },
+    {
+        "titulo": "Seguridad y protección",
+        "slug": "seguridad-y-proteccion",
         "_id": "1008"
     }
-    
 ]

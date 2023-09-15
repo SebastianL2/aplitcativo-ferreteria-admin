@@ -80,7 +80,7 @@
                                   <th class="border-0 py-2 pl-0">Precio envio:</th>
                                   <td class="border-0 py-2 px-0 text-muted">
                                     <span *ngIf="venta.currency == 'USD'">{{venta.envio_precio|currency:'USD'}}</span>
-                                    <span *ngIf="venta.currency == 'PEN'">{{venta.envio_precio|currency:'PEN'}}</span>
+                                    <span *ngIf="venta.currency == 'PEN'">{{venta.envio_precio|currency:'COP'}}</span>
                                   </td>
                                 </tr>
                               <tr>
@@ -99,7 +99,7 @@
                                 <th class="border-0 py-2 pl-0">Descuento:</th>
                                 <td class="border-0 py-2 px-0 text-muted">
                                   <span *ngIf="venta.currency == 'USD'">{{venta.valor_descuento|currency:'USD'}}</span>
-                                  <span *ngIf="venta.currency == 'PEN'">{{venta.valor_descuento|currency:'PEN'}}</span>
+                                  <span *ngIf="venta.currency == 'PEN'">{{venta.valor_descuento|currency:'COP'}}</span>
                                 </td>
                               </tr>
                             </tbody>

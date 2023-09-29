@@ -64,7 +64,7 @@
                                         <span aria-hidden="true">×</span>
                                       </button>
                                     </div>
-                                    <div class="modal-body" style="">
+                                    <div class="modal-body">
                                       <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Nueva etiqueta" name="nueva_etiqueta" [(ngModel)]="nueva_etiqueta">
                                         <button *ngIf="!load_btn_etiqueta" class="btn btn-primary" style="border-radius: 0px;" (click)="agregar_etiqueta()">Agregar</button>
@@ -115,7 +115,7 @@
                   <thead>
                     <tr>
                       <th>Producto</th>
-                      <th>P. Pesos CO</th>
+                      <th>P. pesos/COP</th>
                       <th>p. dolares</th>
                       <th>Stock</th>
                       <th>Opciones</th>
@@ -190,18 +190,25 @@
                                 <div class="alert d-flex alert-danger" role="alert" *ngIf="item.galeria.length!= 4">
                                   <i class="ci-close-round lead me-3"></i>
                                   <div>
-                                    Debe tener 4 imagenes en la galería.
+                                    Debe tener 4 imágenes en la galería.
                                   </div>
                                 </div>
-      
+                        
+                                <div class="alert d-flex alert-danger" role="alert" *ngIf="item.stock <= 5">
+                                  <i class="ci-close-round lead me-3"></i>
+                                  <div>
+                                    Debe tener Stock suficiente mayor a 5 unidades.
+                                  </div>
+                                </div>
+                                
                                 <p *ngIf="!item.vs">Desea hacer visible el producto en la tienda?</p>
                                 <p *ngIf="item.vs">Desea ocultar el producto de la tienda?</p>
                               </div>
                               <div class="modal-footer">
                                 <button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Cancelar</button>
                                 <ng-container *ngIf="!load_estado">
-                                  <button *ngIf="item.galeria.length!= 4" class="btn btn-danger btn-shadow btn-sm" disabled type="button">Si, cambiar</button>
-                                  <button *ngIf="item.galeria.length== 4" class="btn btn-danger btn-shadow btn-sm" (click)="cambiar_vs(item._id,item.estado)" type="button">Si, cambiar</button>
+                                  <button *ngIf="item.galeria.length!= 4 && item.stock <= 5" class="btn btn-danger btn-shadow btn-sm" disabled type="button">Si, cambiar</button>
+                                  <button *ngIf="item.galeria.length== 4 && item.stock > 5" class="btn btn-danger btn-shadow btn-sm" (click)="cambiar_vs(item._id,item.estado)" type="button">Si, cambiar</button>
                                 </ng-container>
                                 
                                 
